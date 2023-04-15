@@ -1,0 +1,305 @@
+.appcontainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2274A5;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #5fe1f8;
+  }
+
+  .topnav img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    border-radius: 12px;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #5fe1f8;
+    color: white;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+  }
+
+  .input{
+    background-color: #ABFAA9;
+    color:black;
+    padding: 1em;
+    border-radius: 10px;
+    border:3px solid ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+  }
+
+  .mainInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 80px;
+  }
+  .mainInput textarea{
+    resize: none;
+    height: 16em;
+    width: 100%;
+  }
+
+
+  .settingsBoxA{
+    background-color: #ABFAA9;
+    padding: 1em;
+    border-radius: 10px;
+    border-color: black;
+    height: 16em;
+    border:3px solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin-left: 1ch;
+    margin-right: 1ch;
+  }
+
+
+  .brain{
+    position: relative;
+    margin-top: 40%;
+    margin-bottom: 8em;
+  }
+  
+  .brain .a{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    background-color: rgb(133, 133, 133);
+    border: black;
+    border: 2px solid;
+  }
+
+  .brain .b{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    filter: blur(2px);
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 40px;
+    background-color: blue;
+    animation-name: regenbogenhaut;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+  }
+  @keyframes regenbogenhaut{
+    0%{
+        background-color: #faa9a9;
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+      background-color:  #faa9a9;
+  }
+  }
+
+  .brain .c{
+    
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 40px;
+    background-color: rgb(0, 0, 0);
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes pulse{
+    0%{
+      width: 35px;
+      height: 35px;
+    }
+    50%{
+      width: 25px;
+      height: 25px;
+    }
+    100%{
+      width: 35px;
+    height: 35px;
+  }
+  }
+
+
+
+ 
+
+  .controleButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sendButton:hover{
+    background-color: #636363;
+   }
+
+  .sendButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    height: 3em;
+    width: 9em;
+  }
+
+  .dropDownSelection:hover{
+    background-color: white;
+  }
+  
+
+  
+
+  .translationEnglish{
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 80px;
+    padding-right: 18px;
+    
+  }
+  .translationEnglish .outputEnglish{
+    margin-left: 0;
+  }
+/*------------------------------------------------------------------------------*/
+.secondContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-left: 80px;
+  margin-right: 80px;
+}
+
+.translationGerman{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.translationGerman .outputGerman{   
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #ABFAA9;
+  color:black;
+  padding: 1em;
+  border-radius: 10px;
+  border:3px solid ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+  height: 16em;
+  width: 100%;
+  margin-right: 16px ;
+  resize: none;
+}
+
+.translationGerman .upgradeGerman{
+  margin-left: 16px;
+  resize: none;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+/*---------------------------------------------------------*/
+.thirdContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-left: 80px;
+  margin-right: 80px;
+}
+
+.settingsBoxB{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #ABFAA9;
+  padding: 1em;
+  border-radius: 10px;
+  border-color: black;
+  height: 5em;
+  width: 100%;
+  border:3px solid;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+  margin-right: 16px;
+}
+
+
+.sliderElement{
+  display:flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.upgradeButton{
+  margin-right: 15px;
+}
+
+/*----------------------------------------------------*/
+.DeltaScorebox {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f88b5f;
+  border-radius: 10px;
+  border-color: black;
+  height: 5em;
+  width: 5em;
+  border: 4px solid;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+  margin-left: 2em;;
+}
+
+.DeltaScorebox p{
+  margin: 0;
+}
