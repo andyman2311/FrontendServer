@@ -179,7 +179,7 @@ const Navbar = ({handleLogin}) => {
   return (
     <div className="topnav">
       <a className="active"><img src={Logo} alt="logo"></img></a>
-      <a href="https://app.swaggerhub.com/apis-docs/SIMONKLEINENSK/Vs-API/1.0.0">API</a>
+      <a href="http://5.182.33.178:1234/api-docs/#/">API</a>
       <button className='loginButton'  onClick={() => handleLogin()}>Login</button>
     </div>
   )
